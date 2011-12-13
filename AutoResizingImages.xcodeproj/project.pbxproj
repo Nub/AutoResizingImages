@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B737E8D148C6AC800A55D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B737E8C148C6AC800A55D7E /* UIKit.framework */; };
+		4B737E8F148C6AC800A55D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B737E8E148C6AC800A55D7E /* Foundation.framework */; };
+		4B737E91148C6AC800A55D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B737E90148C6AC800A55D7E /* CoreGraphics.framework */; };
+		4B737E97148C6AC800A55D7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B737E95148C6AC800A55D7E /* InfoPlist.strings */; };
+		4B737E99148C6AC800A55D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B737E98148C6AC800A55D7E /* main.m */; };
+		4B737E9D148C6AC800A55D7E /* ZTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B737E9C148C6AC800A55D7E /* ZTAppDelegate.m */; };
+		4B737EA0148C6AC800A55D7E /* ZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B737E9F148C6AC800A55D7E /* ZTViewController.m */; };
+		4B737EA3148C6AC800A55D7E /* ZTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B737EA1148C6AC800A55D7E /* ZTViewController_iPhone.xib */; };
+		4B737EA6148C6AC800A55D7E /* ZTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B737EA4148C6AC800A55D7E /* ZTViewController_iPad.xib */; };
+		4B737EAE148C6C2D00A55D7E /* UIImage_AutoResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B737EAD148C6C2D00A55D7E /* UIImage_AutoResizing.m */; };
+		4B737EB6148C752E00A55D7E /* testButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B737EB4148C752E00A55D7E /* testButton.png */; };
+		4B737EB7148C752E00A55D7E /* testButton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B737EB5148C752E00A55D7E /* testButton1.png */; };
+		4B737EBA148C807800A55D7E /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B737EB9148C807800A55D7E /* arrow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B737E88148C6AC800A55D7E /* AutoResizingImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoResizingImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B737E8C148C6AC800A55D7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B737E8E148C6AC800A55D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B737E90148C6AC800A55D7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B737E94148C6AC800A55D7E /* AutoResizingImages-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoResizingImages-Info.plist"; sourceTree = "<group>"; };
+		4B737E96148C6AC800A55D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B737E98148C6AC800A55D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B737E9A148C6AC800A55D7E /* AutoResizingImages-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoResizingImages-Prefix.pch"; sourceTree = "<group>"; };
+		4B737E9B148C6AC800A55D7E /* ZTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTAppDelegate.h; sourceTree = "<group>"; };
+		4B737E9C148C6AC800A55D7E /* ZTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTAppDelegate.m; sourceTree = "<group>"; };
+		4B737E9E148C6AC800A55D7E /* ZTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTViewController.h; sourceTree = "<group>"; };
+		4B737E9F148C6AC800A55D7E /* ZTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTViewController.m; sourceTree = "<group>"; };
+		4B737EA2148C6AC800A55D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZTViewController_iPhone.xib; sourceTree = "<group>"; };
+		4B737EA5148C6AC800A55D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZTViewController_iPad.xib; sourceTree = "<group>"; };
+		4B737EAC148C6C2D00A55D7E /* UIImage_AutoResizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImage_AutoResizing.h; sourceTree = SOURCE_ROOT; };
+		4B737EAD148C6C2D00A55D7E /* UIImage_AutoResizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImage_AutoResizing.m; sourceTree = SOURCE_ROOT; };
+		4B737EB4148C752E00A55D7E /* testButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testButton.png; sourceTree = "<group>"; };
+		4B737EB5148C752E00A55D7E /* testButton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testButton1.png; sourceTree = "<group>"; };
+		4B737EB9148C807800A55D7E /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B737E85148C6AC800A55D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B737E8D148C6AC800A55D7E /* UIKit.framework in Frameworks */,
+				4B737E8F148C6AC800A55D7E /* Foundation.framework in Frameworks */,
+				4B737E91148C6AC800A55D7E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B737E7D148C6AC800A55D7E = {
+			isa = PBXGroup;
+			children = (
+				4B737E92148C6AC800A55D7E /* AutoResizingImages */,
+				4B737E8B148C6AC800A55D7E /* Frameworks */,
+				4B737E89148C6AC800A55D7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B737E89148C6AC800A55D7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B737E88148C6AC800A55D7E /* AutoResizingImages.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B737E8B148C6AC800A55D7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B737E8C148C6AC800A55D7E /* UIKit.framework */,
+				4B737E8E148C6AC800A55D7E /* Foundation.framework */,
+				4B737E90148C6AC800A55D7E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B737E92148C6AC800A55D7E /* AutoResizingImages */ = {
+			isa = PBXGroup;
+			children = (
+				4B737EB3148C752E00A55D7E /* Resources */,
+				4B737E9B148C6AC800A55D7E /* ZTAppDelegate.h */,
+				4B737E9C148C6AC800A55D7E /* ZTAppDelegate.m */,
+				4B737E9E148C6AC800A55D7E /* ZTViewController.h */,
+				4B737E9F148C6AC800A55D7E /* ZTViewController.m */,
+				4B737EA1148C6AC800A55D7E /* ZTViewController_iPhone.xib */,
+				4B737EA4148C6AC800A55D7E /* ZTViewController_iPad.xib */,
+				4B737E93148C6AC800A55D7E /* Supporting Files */,
+				4B737EAC148C6C2D00A55D7E /* UIImage_AutoResizing.h */,
+				4B737EAD148C6C2D00A55D7E /* UIImage_AutoResizing.m */,
+			);
+			path = AutoResizingImages;
+			sourceTree = "<group>";
+		};
+		4B737E93148C6AC800A55D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B737E94148C6AC800A55D7E /* AutoResizingImages-Info.plist */,
+				4B737E95148C6AC800A55D7E /* InfoPlist.strings */,
+				4B737E98148C6AC800A55D7E /* main.m */,
+				4B737E9A148C6AC800A55D7E /* AutoResizingImages-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B737EB3148C752E00A55D7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B737EB9148C807800A55D7E /* arrow.png */,
+				4B737EB4148C752E00A55D7E /* testButton.png */,
+				4B737EB5148C752E00A55D7E /* testButton1.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B737E87148C6AC800A55D7E /* AutoResizingImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B737EA9148C6AC800A55D7E /* Build configuration list for PBXNativeTarget "AutoResizingImages" */;
+			buildPhases = (
+				4B737E84148C6AC800A55D7E /* Sources */,
+				4B737E85148C6AC800A55D7E /* Frameworks */,
+				4B737E86148C6AC800A55D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoResizingImages;
+			productName = AutoResizingImages;
+			productReference = 4B737E88148C6AC800A55D7E /* AutoResizingImages.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B737E7F148C6AC800A55D7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Zachry Thayer";
+			};
+			buildConfigurationList = 4B737E82148C6AC800A55D7E /* Build configuration list for PBXProject "AutoResizingImages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B737E7D148C6AC800A55D7E;
+			productRefGroup = 4B737E89148C6AC800A55D7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B737E87148C6AC800A55D7E /* AutoResizingImages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B737E86148C6AC800A55D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B737E97148C6AC800A55D7E /* InfoPlist.strings in Resources */,
+				4B737EA3148C6AC800A55D7E /* ZTViewController_iPhone.xib in Resources */,
+				4B737EA6148C6AC800A55D7E /* ZTViewController_iPad.xib in Resources */,
+				4B737EB6148C752E00A55D7E /* testButton.png in Resources */,
+				4B737EB7148C752E00A55D7E /* testButton1.png in Resources */,
+				4B737EBA148C807800A55D7E /* arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B737E84148C6AC800A55D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B737E99148C6AC800A55D7E /* main.m in Sources */,
+				4B737E9D148C6AC800A55D7E /* ZTAppDelegate.m in Sources */,
+				4B737EA0148C6AC800A55D7E /* ZTViewController.m in Sources */,
+				4B737EAE148C6C2D00A55D7E /* UIImage_AutoResizing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B737E95148C6AC800A55D7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B737E96148C6AC800A55D7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B737EA1148C6AC800A55D7E /* ZTViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B737EA2148C6AC800A55D7E /* en */,
+			);
+			name = ZTViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		4B737EA4148C6AC800A55D7E /* ZTViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B737EA5148C6AC800A55D7E /* en */,
+			);
+			name = ZTViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B737EA7148C6AC800A55D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B737EA8148C6AC800A55D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B737EAA148C6AC800A55D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoResizingImages/AutoResizingImages-Prefix.pch";
+				INFOPLIST_FILE = "AutoResizingImages/AutoResizingImages-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B737EAB148C6AC800A55D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoResizingImages/AutoResizingImages-Prefix.pch";
+				INFOPLIST_FILE = "AutoResizingImages/AutoResizingImages-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B737E82148C6AC800A55D7E /* Build configuration list for PBXProject "AutoResizingImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B737EA7148C6AC800A55D7E /* Debug */,
+				4B737EA8148C6AC800A55D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B737EA9148C6AC800A55D7E /* Build configuration list for PBXNativeTarget "AutoResizingImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B737EAA148C6AC800A55D7E /* Debug */,
+				4B737EAB148C6AC800A55D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B737E7F148C6AC800A55D7E /* Project object */;
+}
