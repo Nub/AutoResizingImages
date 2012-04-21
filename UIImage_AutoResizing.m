@@ -20,6 +20,8 @@ unsigned int colorFromDataAtPoint(unsigned int* data, unsigned int dataStride,CG
 + (UIImage*)autoResizingImageNamed:(NSString*)imageName{
     
     UIImage *original = [UIImage imageNamed:imageName];
+    CGFloat scale = [original scale];
+
     UIImage *returnImage = original;
         
     CGImageRef imageRef = [original CGImage];
@@ -47,10 +49,11 @@ unsigned int colorFromDataAtPoint(unsigned int* data, unsigned int dataStride,CG
     if (firstPixel == UIImage_AutoResizingKeyColor) {
 
         // First rerender the image to remove extra width and height
-        UIGraphicsBeginImageContext(CGSizeMake(width - 1, height - 1));
+        UIGraphicsBeginImageContext(CGSizeMake(width - scale, height - scale));
         
-        [original drawInRect:CGRectMake(-1, -1, width, height)];
+        [original drawInRect:CGRectMake(-scale, -scale, width, height)];
         returnImage = UIGraphicsGetImageFromCurrentImageContext();
+        returnImage = [UIImage imageWithCGImage:[returnImage CGImage] scale:scale orientation:UIImageOrientationUp];
         UIGraphicsEndImageContext();
         
         original = nil;
@@ -63,9 +66,9 @@ unsigned int colorFromDataAtPoint(unsigned int* data, unsigned int dataStride,CG
         
         for (int x = 0; x < width; x ++) {
             
-            unsigned int color = colorFromDataAtPoint(rawData, width, CGPointMake(x, 0));
+            unsigned int color = colorFromDataAtPoint(rawData, width, CGPointMake(x*scale, 0));
             
-            if (color == 0xff000000) {//first cap found
+            if (color == UIImage_AutoResizingMarkerColor) {//first cap found
                 
                 if (edgeInsets.left == 0) {
                     
@@ -85,9 +88,9 @@ unsigned int colorFromDataAtPoint(unsigned int* data, unsigned int dataStride,CG
         
         for (int y = 0; y < height; y ++) {
             
-            unsigned int color = colorFromDataAtPoint(rawData, width, CGPointMake(0,y));
+            unsigned int color = colorFromDataAtPoint(rawData, width, CGPointMake(0,y*scale));
             
-            if (color == 0xff000000) {//first cap found
+            if (color == UIImage_AutoResizingMarkerColor) {//first cap found
                 
                 if (edgeInsets.top == 0) {
                     

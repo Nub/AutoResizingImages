@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define UIImage_AutoResizingKeyColor 0xffff00ff
+#define UIImage_AutoResizingMarkerColor 0xff000000
 
 @interface UIImage (AutoResizing)
 
